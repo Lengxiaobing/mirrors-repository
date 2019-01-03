@@ -1,2 +1,2 @@
-FROM gcr.io/google-containers/kube-apiserver-amd64:v1.13.1
+FROM gcr.io/google-containers/k8s-dns-sidecar-amd64:1.15.0
 MAINTAINER lengxiaobing <tn787681084@gmail.com>
