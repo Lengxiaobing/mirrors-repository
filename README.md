@@ -1,2 +1,1 @@
-# Kubernetes
-Kubernetes镜像库
+＃镜像库
