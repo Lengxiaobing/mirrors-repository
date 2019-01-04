@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8b38fcb-77ab-45cb-90be-bba1d3edfcd3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Kubernetes/mirror/k8s-dns-sidecar-amd64/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Kubernetes/mirror/k8s-dns-sidecar-amd64/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kubernetes/mirror/etcd/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quay/mirror/calico/cni/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quay/mirror/calico/kube-controllers/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quay/mirror/calico/kube-policy-controller/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quay/mirror/calico/node/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quay/mirror/coreos/etcd/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,51 +24,48 @@
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/etcd-amd64/Dockerfile">
+        <entry file="file://$PROJECT_DIR$/quay/mirror/calico/cni/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="47" lean-forward="true" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+            <state>
+              <caret column="36" selection-start-column="36" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/k8s-dns-dnsmasq-nanny-amd64/Dockerfile">
+        <entry file="file://$PROJECT_DIR$/quay/mirror/calico/kube-controllers/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="64" lean-forward="true" selection-start-column="58" selection-end-column="64" />
+              <caret column="49" selection-start-column="49" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/k8s-dns-kube-dns-amd64/Dockerfile">
+        <entry file="file://$PROJECT_DIR$/quay/mirror/calico/kube-policy-controller/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="59" lean-forward="true" selection-start-column="53" selection-end-column="59" />
+              <caret column="53" selection-start-column="53" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quay/mirror/calico/node/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="37" selection-start-column="37" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/k8s-dns-sidecar-amd64/Dockerfile">
+        <entry file="file://$PROJECT_DIR$/quay/mirror/coreos/etcd/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="58" selection-start-column="58" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kubernetes/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="170">
-                <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="34">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -117,6 +120,12 @@
         <option value="$PROJECT_DIR$/Kubernetes/mirror/pause-amd64/Dockerfile" />
         <option value="$PROJECT_DIR$/Kubernetes/readme.md" />
         <option value="$PROJECT_DIR$/Kubernetes/mirror/k8s-dns-sidecar-amd64/Dockerfile" />
+        <option value="$PROJECT_DIR$/Kubernetes/mirror/etcd/Dockerfile" />
+        <option value="$PROJECT_DIR$/quay/mirror/calico/cni/Dockerfile" />
+        <option value="$PROJECT_DIR$/quay/mirror/calico/kube-controllers/Dockerfile" />
+        <option value="$PROJECT_DIR$/quay/mirror/calico/kube-policy-controller/Dockerfile" />
+        <option value="$PROJECT_DIR$/quay/mirror/calico/node/Dockerfile" />
+        <option value="$PROJECT_DIR$/quay/mirror/coreos/etcd/Dockerfile" />
       </list>
     </option>
   </component>
@@ -143,17 +152,18 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="409" />
-    <option name="y" value="94" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,13 +185,14 @@
               <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
               <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="install" type="462c0819:PsiDirectoryNode" />
+              <item name="mirror" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
               <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
               <item name="mirror" type="462c0819:PsiDirectoryNode" />
+              <item name="etcd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
@@ -193,37 +204,72 @@
             <path>
               <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="k8s-dns-dnsmasq-nanny-amd64" type="462c0819:PsiDirectoryNode" />
+              <item name="quay" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
+              <item name="quay" type="462c0819:PsiDirectoryNode" />
               <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="k8s-dns-kube-dns-amd64" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
+              <item name="quay" type="462c0819:PsiDirectoryNode" />
               <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="k8s-dns-sidecar-amd64" type="462c0819:PsiDirectoryNode" />
+              <item name="calico" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
+              <item name="quay" type="462c0819:PsiDirectoryNode" />
               <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="kube-apiserver-amd64" type="462c0819:PsiDirectoryNode" />
+              <item name="calico" type="462c0819:PsiDirectoryNode" />
+              <item name="cni" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="quay" type="462c0819:PsiDirectoryNode" />
+              <item name="mirror" type="462c0819:PsiDirectoryNode" />
+              <item name="calico" type="462c0819:PsiDirectoryNode" />
+              <item name="kube-controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="quay" type="462c0819:PsiDirectoryNode" />
+              <item name="mirror" type="462c0819:PsiDirectoryNode" />
+              <item name="calico" type="462c0819:PsiDirectoryNode" />
+              <item name="kube-policy-controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="quay" type="462c0819:PsiDirectoryNode" />
+              <item name="mirror" type="462c0819:PsiDirectoryNode" />
+              <item name="calico" type="462c0819:PsiDirectoryNode" />
+              <item name="node" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="quay" type="462c0819:PsiDirectoryNode" />
+              <item name="mirror" type="462c0819:PsiDirectoryNode" />
+              <item name="coreos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
+              <item name="quay" type="462c0819:PsiDirectoryNode" />
+              <item name="mirror" type="462c0819:PsiDirectoryNode" />
+              <item name="coreos" type="462c0819:PsiDirectoryNode" />
+              <item name="etcd" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,17 +287,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\k8s-dns-sidecar-amd64" />
-      <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\k8s-dns-kube-dns-amd64" />
-      <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\k8s-dns-dnsmasq-nanny-amd64" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\install\install-k8s" />
       <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\install\install-networks" />
       <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\pause-amd64" />
       <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\kube-scheduler-amd64" />
       <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\kube-proxy-amd64" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Repositories\Mirrors_Repository\quay\mirror\coreos\etcd" />
+      <recent name="D:\Repositories\Mirrors_Repository\quay\mirror\calico\node" />
+      <recent name="D:\Repositories\Mirrors_Repository\quay\mirror\calico\kube-policy-controller" />
+      <recent name="D:\Repositories\Mirrors_Repository\quay\mirror\calico\kube-controllers" />
+      <recent name="D:\Repositories\Mirrors_Repository\quay\mirror\calico\cni" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -321,7 +369,8 @@
       <updated>1546483667235</updated>
       <workItem from="1546483668895" duration="906000" />
       <workItem from="1546485154348" duration="9084000" />
-      <workItem from="1546500684267" duration="6219000" />
+      <workItem from="1546500684267" duration="7042000" />
+      <workItem from="1546563262848" duration="3250000" />
     </task>
     <task id="LOCAL-00001" summary="Kubernetes镜像">
       <created>1546508240807</created>
@@ -337,14 +386,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546508609360</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修改">
+      <created>1546509540583</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546509540583</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16209000" />
+    <option name="totallyTimeSpent" value="20282000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Key Promoter X" order="3" />
@@ -355,7 +411,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="LuaJ" order="3" />
       <window_info anchor="bottom" id="Tail" order="7" />
       <window_info anchor="right" id="Database" order="3" />
@@ -367,23 +423,23 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="right" id="Mybatis datasource" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Problems" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16106667" />
       <window_info anchor="bottom" id="Run with VisualVM" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33406353" />
+      <window_info anchor="bottom" id="Problems" order="7" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="7" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +451,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kubernetes镜像" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/etcd-amd64/Dockerfile">
@@ -454,13 +511,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kubernetes/install/ingress-nginx/ingress-nginx-images.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/install/ingress-nginx/ingress-nginx-images.sh" />
     <entry file="file://$PROJECT_DIR$/Kubernetes/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -496,13 +547,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kubernetes/install/ingress-nginx/ingress-nginx-images.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="79" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/install/ingress-nginx/ingress-nginx-images.sh" />
     <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-apiserver-amd64/v1.7.6/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-networks/network-images.sh">
       <provider selected="true" editor-type-id="text-editor">
@@ -532,41 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-controller-manager-amd64/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-proxy-amd64/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-scheduler-amd64/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kubernetes-dashboard-amd64/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/pause-amd64/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kubernetes/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -574,20 +584,6 @@
             <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-apiserver-amd64/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/etcd-amd64/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="47" lean-forward="true" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -601,7 +597,7 @@
     <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/k8s-dns-kube-dns-amd64/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="59" lean-forward="true" selection-start-column="53" selection-end-column="59" />
+          <caret column="53" lean-forward="true" selection-start-column="53" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -609,6 +605,97 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="58" selection-start-column="58" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-apiserver-amd64/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="58" lean-forward="true" selection-start-column="51" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-controller-manager-amd64/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="67" lean-forward="true" selection-start-column="30" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-proxy-amd64/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="54" lean-forward="true" selection-start-column="30" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-scheduler-amd64/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="58" lean-forward="true" selection-start-column="30" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kubernetes-dashboard-amd64/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="64" lean-forward="true" selection-start-column="30" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/pause-amd64/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/etcd-amd64/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/etcd/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quay/mirror/calico/cni/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quay/mirror/calico/kube-controllers/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="49" selection-start-column="49" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quay/mirror/calico/kube-policy-controller/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="53" selection-start-column="53" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quay/mirror/calico/node/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quay/mirror/coreos/etcd/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
