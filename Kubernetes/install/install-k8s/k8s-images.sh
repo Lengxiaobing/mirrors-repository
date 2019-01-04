@@ -2,68 +2,51 @@
 
 
 # 拉取k8s镜像文件
-k8s_version=v1.11.0
+# 版本信息
+k8s_version=v1.13.1
+k8s_dns_version=1.15.0
 pause_version=3.1
-etcd_version=3.2.18
-coredns_version=1.1.3
-dashborad_version=v1.8.3
-registry_name=registry.cn-hangzhou.aliyuncs.com/geekcloud
-registry_host=registry.cn-hangzhou.aliyuncs.com
+etcd_version=3.3.10
+coredns_version=1.2.6
+dashborad_version=v1.10.1
+
+# 路径
+registry_path=k8s.gcr.io
+docker_path=lengxiaobing
 
 function pull_images(){
     echo "Pulling Images"
-    sudo docker pull k8s.gcr.io/kube-apiserver-amd64:${k8s_version}
-    sudo docker pull k8s.gcr.io/kube-controller-manager-amd64:${k8s_version}
-    sudo docker pull k8s.gcr.io/kube-scheduler-amd64:${k8s_version}
-    sudo docker pull k8s.gcr.io/kube-proxy-amd64:${k8s_version}
-    sudo docker pull k8s.gcr.io/pause:${pause_version}
-    sudo docker pull k8s.gcr.io/etcd-amd64:${etcd_version}
-    sudo docker pull k8s.gcr.io/coredns:${coredns_version}
-    sudo docker pull k8s.gcr.io/kubernetes-dashboard-amd64:${dashborad_version}
+    sudo docker pull ${docker_path}/kube-proxy-amd64:${k8s_version}
+    sudo docker pull ${docker_path}/kube-scheduler-amd64:${k8s_version}
+    sudo docker pull ${docker_path}/kube-controller-manager-amd64:${k8s_version}
+    sudo docker pull ${docker_path}/kube-apiserver-amd64:${k8s_version}
+    sudo docker pull ${docker_path}/etcd-amd64:${etcd_version}
+    sudo docker pull ${docker_path}/k8s-dns-dnsmasq-nanny-amd64:${k8s_dns_version}
+    sudo docker pull ${docker_path}/k8s-dns-sidecar-amd64:${k8s_dns_version}
+    sudo docker pull ${docker_path}/k8s-dns-kube-dns-amd64:${k8s_dns_version}
+    sudo docker pull ${docker_path}/pause-amd64:${pause_version}
+    sudo docker pull ${docker_path}/etcd:${etcd_version}
+    sudo docker pull ${docker_path}/coredns:${coredns_version}
+    sudo docker pull ${docker_path}/kubernetes-dashboard-amd64:${dashborad_version}
 }
 
-function set_tags(){
-    echo "Setting Tags"
-    sudo docker tag k8s.gcr.io/kube-apiserver-amd64:${k8s_version}             ${registry_name}/kube-apiserver-amd64:${k8s_version}
-    sudo docker tag k8s.gcr.io/kube-controller-manager-amd64:${k8s_version}    ${registry_name}/kube-controller-manager-amd64:${k8s_version}
-    sudo docker tag k8s.gcr.io/kube-scheduler-amd64:${k8s_version}             ${registry_name}/kube-scheduler-amd64:${k8s_version}
-    sudo docker tag k8s.gcr.io/kube-proxy-amd64:${k8s_version}                 ${registry_name/kube-proxy-amd64:${k8s_version}
-    sudo docker tag k8s.gcr.io/pause:${pause_version}                          ${registry_name}/pause:${pause_version}
-    sudo docker tag k8s.gcr.io/etcd-amd64:${etcd_version}                      ${registry_name}/etcd-amd64:${etcd_version}
-    sudo docker tag k8s.gcr.io/coredns:${coredns_version}                      ${registry_name}/coredns:${coredns_version}
-    sudo docker tag k8s.gcr.io/kubernetes-dashboard-amd64:${dashborad_version} ${registry_name}/k8s-dashboard:${dashborad_version}
-}
 
 function reset_tags(){
     echo "Reset Tags"
-    sudo docker tag ${registry_name}/kube-apiserver-amd64:${k8s_version}             k8s.gcr.io/kube-apiserver-amd64:${k8s_version}
-    sudo docker tag ${registry_name}/kube-controller-manager-amd64:${k8s_version}    k8s.gcr.io/kube-controller-manager-amd64:${k8s_version}
-    sudo docker tag ${registry_name}/kube-scheduler-amd64:${k8s_version}             k8s.gcr.io/kube-scheduler-amd64:${k8s_version}
-    sudo docker tag ${registry_name}/kube-proxy-amd64:${k8s_version}                 k8s.gcr.io/kube-proxy-amd64:${k8s_version}
-    sudo docker tag ${registry_name}/pause:${pause_version}                          k8s.gcr.io/pause:${pause_version}
-    sudo docker tag ${registry_name}/etcd-amd64:${etcd_version}                      k8s.gcr.io/etcd-amd64:${etcd_version}
-    sudo docker tag ${registry_name}/coredns:${coredns_version}                      k8s.gcr.io/coredns:${coredns_version}
-    sudo docker tag ${registry_name}/k8s-dashboard:${dashborad_version}              k8s.gcr.io/kubernetes-dashboard-amd64:${dashborad_version}
-}
-
-function local_pull_images(){
-    echo "Local Pulling Images"
-    sudo docker pull ${registry_name}/kube-apiserver-amd64:${k8s_version}
-    sudo docker pull ${registry_name}/kube-controller-manager-amd64:${k8s_version}
-    sudo docker pull ${registry_name}/kube-scheduler-amd64:${k8s_version}
-    sudo docker pull ${registry_name}/kube-proxy-amd64:${k8s_version}
-    sudo docker pull ${registry_name}/pause:${pause_version}
-    sudo docker pull ${registry_name}/etcd-amd64:${etcd_version}
-    sudo docker pull ${registry_name}/coredns:${coredns_version}
-    sudo docker pull ${registry_name}/k8s-dashboard:${dashborad_version}
+    sudo docker tag ${docker_path}/kube-proxy-amd64:${k8s_version}                    ${registry_path}/kube-proxy:${k8s_version}
+    sudo docker tag ${docker_path}/kube-scheduler-amd64:${k8s_version}                ${registry_path}/kube-scheduler:${k8s_version}
+    sudo docker tag ${docker_path}/kube-controller-manager-amd64:${k8s_version}       ${registry_path}/kube-controller-manager:${k8s_version}
+    sudo docker tag ${docker_path}/kube-apiserver-amd64:${k8s_version}                ${registry_path}/kube-apiserver:${k8s_version}
+    sudo docker tag ${docker_path}/etcd-amd64:${etcd_version}                         ${registry_path}/etcd-amd64:${etcd_version}
+    sudo docker tag ${docker_path}/k8s-dns-dnsmasq-nanny-amd64:${k8s_dns_version}     ${registry_path}/k8s-dns-dnsmasq-nanny-amd64:${k8s_dns_version}
+    sudo docker tag ${docker_path}/k8s-dns-sidecar-amd64:${k8s_dns_version}           ${registry_path}/k8s-dns-sidecar-amd64:${k8s_dns_version}
+    sudo docker tag ${docker_path}/k8s-dns-kube-dns-amd64:${k8s_dns_version}          ${registry_path}/k8s-dns-kube-dns-amd64:${k8s_dns_version}
+    sudo docker tag ${docker_path}/pause-amd64:${pause_version}                       ${registry_path}/pause:${pause_version}
+    sudo docker tag ${docker_path}/etcd:${etcd_version}                               ${registry_path}/etcd:${etcd_version}
+    sudo docker tag ${docker_path}/coredns:${coredns_version}                         ${registry_path}/coredns:${coredns_version}
+    sudo docker tag ${docker_path}/kubernetes-dashboard-amd64:${dashborad_version}    ${registry_path}/kubernetes-dashboard-amd64:${dashborad_version}
 }
 
 #server
-
 pull_images
-set_tags
-
-#local
-
-#local_pull_images
-#reset_tags
+reset_tags

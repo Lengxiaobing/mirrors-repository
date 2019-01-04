@@ -12,9 +12,6 @@ repo_gpgcheck=1
 gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
 EOF
 
-# 更新系统所有软件
-yum update -y
-
 # 安装kubelet、 kubeadm、kubectl
 yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 
