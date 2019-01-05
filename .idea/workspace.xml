@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8b38fcb-77ab-45cb-90be-bba1d3edfcd3" name="Default" comment="">
+    <list default="true" id="b8b38fcb-77ab-45cb-90be-bba1d3edfcd3" name="Default" comment="gitignore">
+      <change afterPath="$PROJECT_DIR$/Kubernetes/install/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kubernetes/mirror/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,27 +24,36 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="1" />
+          <entry key="Dockerfile" value="1" />
+          <entry key="gitignore" value="3" />
+          <entry key="md" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Git file" value="1" />
+          <entry key="Dockerfile" value="1" />
+          <entry key="Git file" value="3" />
+          <entry key="Markdown" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="12" />
+          <entry key="md" value="344" />
+          <entry key="txt" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="12" />
+          <entry key="Markdown" value="344" />
+          <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
     </session>
@@ -52,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-k8s/k8s-images.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="216">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -61,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-k8s/install-kubeadm.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="286">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -70,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-k8s/init-k8s-master.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="176">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -80,16 +91,61 @@
         <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-networks/install-calico.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-networks/network-images.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="582">
+              <caret line="29" column="64" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kubernetes/install/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="396">
+                <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-networks/network-images.sh">
+        <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="176">
+                <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-proxy-amd64/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="66">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kubernetes/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="220">
+                <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -143,7 +199,6 @@
         <option value="$PROJECT_DIR$/Kubernetes/mirror/kube-scheduler-amd64/Dockerfile" />
         <option value="$PROJECT_DIR$/Kubernetes/mirror/kubernetes-dashboard-amd64/Dockerfile" />
         <option value="$PROJECT_DIR$/Kubernetes/mirror/pause-amd64/Dockerfile" />
-        <option value="$PROJECT_DIR$/Kubernetes/readme.md" />
         <option value="$PROJECT_DIR$/Kubernetes/mirror/k8s-dns-sidecar-amd64/Dockerfile" />
         <option value="$PROJECT_DIR$/Kubernetes/mirror/etcd/Dockerfile" />
         <option value="$PROJECT_DIR$/quay/mirror/calico/cni/Dockerfile" />
@@ -157,6 +212,9 @@
         <option value="$PROJECT_DIR$/Kubernetes/install/install-networks/network-images.sh" />
         <option value="$PROJECT_DIR$/Kubernetes/install/install-k8s/k8s-images.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Kubernetes/install/readme.md" />
+        <option value="$PROJECT_DIR$/Kubernetes/readme.md" />
+        <option value="$PROJECT_DIR$/Kubernetes/mirror/readme.md" />
       </list>
     </option>
   </component>
@@ -189,8 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,124 +269,14 @@
               <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
               <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="install" type="462c0819:PsiDirectoryNode" />
-              <item name="install-k8s" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="install" type="462c0819:PsiDirectoryNode" />
-              <item name="install-networks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
               <item name="mirror" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="etcd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="etcd-amd64" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="k8s-dns-dnsmasq-nanny-amd64" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="kube-apiserver-amd64" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="kube-controller-manager-amd64" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="kube-proxy-amd64" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Kubernetes" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="kube-scheduler-amd64" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="quay" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="quay" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="quay" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="calico" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="quay" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="calico" type="462c0819:PsiDirectoryNode" />
-              <item name="kube-policy-controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="quay" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="calico" type="462c0819:PsiDirectoryNode" />
-              <item name="node" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="quay" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="coreos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mirrors_Repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mirrors_Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="quay" type="462c0819:PsiDirectoryNode" />
-              <item name="mirror" type="462c0819:PsiDirectoryNode" />
-              <item name="coreos" type="462c0819:PsiDirectoryNode" />
-              <item name="etcd" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,6 +285,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546683854371" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -348,19 +295,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GitHub\Mirrors_Repository\Kubernetes\mirror" />
+      <recent name="E:\GitHub\Mirrors_Repository\Kubernetes\install" />
+      <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\dashboard" />
+      <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\coredns" />
+      <recent name="D:\Repositories\Mirrors_Repository\quay\mirror\coreos\etcd" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\install\install-k8s" />
       <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\install\install-networks" />
       <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\pause-amd64" />
       <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\kube-scheduler-amd64" />
       <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\kube-proxy-amd64" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\dashboard" />
-      <recent name="D:\Repositories\Mirrors_Repository\Kubernetes\mirror\coredns" />
-      <recent name="D:\Repositories\Mirrors_Repository\quay\mirror\coreos\etcd" />
-      <recent name="D:\Repositories\Mirrors_Repository\quay\mirror\calico\node" />
-      <recent name="D:\Repositories\Mirrors_Repository\quay\mirror\calico\kube-policy-controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -412,6 +359,7 @@
       <workItem from="1546500684267" duration="7042000" />
       <workItem from="1546563262848" duration="11321000" />
       <workItem from="1546680700015" duration="940000" />
+      <workItem from="1546681701738" duration="1812000" />
     </task>
     <task id="LOCAL-00001" summary="Kubernetes镜像">
       <created>1546508240807</created>
@@ -448,16 +396,24 @@
       <option name="project" value="LOCAL" />
       <updated>1546576648358</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gitignore">
+      <created>1546681860282</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1546681860282</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29293000" />
+    <option name="totallyTimeSpent" value="31105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16426666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16586667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -474,7 +430,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.32997763" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Run with VisualVM" order="10" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -508,7 +464,8 @@
     <MESSAGE value="修改" />
     <MESSAGE value="添加quay" />
     <MESSAGE value="coredns" />
-    <option name="LAST_COMMIT_MESSAGE" value="coredns" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Kubernetes/check-tags.py" />
@@ -524,16 +481,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Kubernetes/install/ingress-nginx/ingress-nginx-images.sh" />
     <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-apiserver-amd64/v1.7.6/Dockerfile" />
-    <entry file="file://$PROJECT_DIR$/Kubernetes/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/k8s-dns-kube-dns-amd64/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -618,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-proxy-amd64/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-scheduler-amd64/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -661,45 +601,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-k8s/k8s-images.sh">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="242">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/kube-proxy-amd64/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-k8s/install-kubeadm.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="286">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-k8s/k8s-images.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-k8s/init-k8s-master.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="176">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-networks/install-calico.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kubernetes/install/install-networks/network-images.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="582">
+          <caret line="29" column="64" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/install/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="396">
+            <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="220">
+            <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kubernetes/mirror/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="176">
+            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
