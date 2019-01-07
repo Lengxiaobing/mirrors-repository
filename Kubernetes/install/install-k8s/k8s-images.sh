@@ -9,6 +9,7 @@ pause_version=3.1
 etcd_version=3.3.10
 coredns_version=1.2.6
 dashborad_version=v1.10.1
+dashborad_ini_version=v1.0.1
 
 # 路径
 registry_path=k8s.gcr.io
@@ -28,6 +29,7 @@ function pull_images(){
     sudo docker pull ${docker_path}/etcd:${etcd_version}
     sudo docker pull ${docker_path}/coredns:${coredns_version}
     sudo docker pull ${docker_path}/kubernetes-dashboard-amd64:${dashborad_version}
+    sudo docker pull ${docker_path}/kubernetes-dashboard-init-amd64:${dashborad_ini_version}
 }
 
 
@@ -45,6 +47,7 @@ function reset_tags(){
     sudo docker tag ${docker_path}/etcd:${etcd_version}                               ${registry_path}/etcd:${etcd_version}
     sudo docker tag ${docker_path}/coredns:${coredns_version}                         ${registry_path}/coredns:${coredns_version}
     sudo docker tag ${docker_path}/kubernetes-dashboard-amd64:${dashborad_version}    ${registry_path}/kubernetes-dashboard-amd64:${dashborad_version}
+    sudo docker tag ${docker_path}/kubernetes-dashboard-init-amd64:${dashborad_ini_version}    ${registry_path}/kubernetes-dashboard-init-amd64:${dashborad_ini_version}
 }
 
 #server
