@@ -104,7 +104,7 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 
 > 其他相关的一些配置，和集群安装方式，参见我的博客
 
-- [kubeadm部署kubernetes单主集群]([https://lengxiaobing.github.io/2019/01/02/kubeadm%E9%83%A8%E7%BD%B2kubernetes%E5%8D%95%E4%B8%BB%E9%9B%86%E7%BE%A4/](https://lengxiaobing.github.io/2019/01/02/kubeadm部署kubernetes单主集群/))
+- [kubeadm部署kubernetes单主集群](https://lengxiaobing.github.io/2019/01/02/kubeadm%E9%83%A8%E7%BD%B2kubernetes%E5%8D%95%E4%B8%BB%E9%9B%86%E7%BE%A4/)
 
-- [kubeadm部署kubernetes高可用集群-VIP版]([https://lengxiaobing.github.io/2019/06/04/kubeadm%E9%83%A8%E7%BD%B2kubernetes%E9%AB%98%E5%8F%AF%E7%94%A8%E9%9B%86%E7%BE%A4-VIP%E7%89%88/](https://lengxiaobing.github.io/2019/06/04/kubeadm部署kubernetes高可用集群-VIP版/))
+- [kubeadm部署kubernetes高可用集群-VIP版](https://lengxiaobing.github.io/2019/06/04/kubeadm%E9%83%A8%E7%BD%B2kubernetes%E9%AB%98%E5%8F%AF%E7%94%A8%E9%9B%86%E7%BE%A4-VIP%E7%89%88/)
 
