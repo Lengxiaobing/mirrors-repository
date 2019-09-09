@@ -69,6 +69,29 @@ function reset_tags(){
     sudo docker tag ${docker_path}/flannel-arm:${flannel_version}-arm			${flannel_path}/flannel:${flannel_version}-arm
     sudo docker tag ${docker_path}/flannel-ppc64le:${flannel_version}-ppc64le	${flannel_path}/flannel:${flannel_version}-ppc64le
     sudo docker tag ${docker_path}/flannel-s390x:${flannel_version}-s390x		${flannel_path}/flannel:${flannel_version}-s390x
+
+    echo "Delete Tags"
+    sudo docker rmi  ${docker_path}/kube-apiserver:${k8s_version}
+    sudo docker rmi  ${docker_path}/kube-controller-manager:${k8s_version}
+    sudo docker rmi  ${docker_path}/kube-scheduler:${k8s_version}
+    sudo docker rmi  ${docker_path}/kube-proxy:${k8s_version}
+    sudo docker rmi  ${docker_path}/pause:${pause_version}
+    sudo docker rmi  ${docker_path}/etcd:${etcd_version}
+    sudo docker rmi  ${docker_path}/coredns:${coredns_version}
+
+    sudo docker rmi  ${docker_path}/dashboard:${dashboard_version}
+    sudo docker rmi  ${docker_path}/metrics-scraper:${metrics_scraper_version}
+
+    sudo docker rmi  ${docker_path}/calico-cni:${calico_version}
+    sudo docker rmi  ${docker_path}/calico-node:${calico_version}
+    sudo docker rmi  ${docker_path}/calico-kube-controllers:${calico_version}
+    sudo docker rmi  ${docker_path}/calico-pod2daemon-flexvol:${calico_version}
+
+    sudo docker rmi  ${docker_path}/flannel-amd64:${flannel_version}-amd64
+    sudo docker rmi  ${docker_path}/flannel-arm64:${flannel_version}-arm64
+    sudo docker rmi  ${docker_path}/flannel-arm:${flannel_version}-arm
+    sudo docker rmi  ${docker_path}/flannel-ppc64le:${flannel_version}-ppc64le
+    sudo docker rmi  ${docker_path}/flannel-s390x:${flannel_version}-s390x
 }
 
 #server
