@@ -30,22 +30,6 @@ Kubernetes/install/install-k8s/k8s-images.sh  pull_images
 Kubernetes/install/install-k8s/k8s-images.sh  reset_tags
 ```
 
-##  安装pod网络附加组件
-
-> 选择一种网络安装，常用的有calico和flannel。
-
-- calico安装
-
-```shell
-Kubernetes/install/install-networks/install-calico.sh
-```
-
-- flannel安装
-
-```shell
-Kubernetes/install/install-networks/install-flannel.sh
-```
-
 ## 初始化kubernetes
 > 运行初始化脚本前，需要修改脚本内容，主要修改主节点IP参数，设为自己安装主机的IP
 
@@ -98,6 +82,22 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 
 ```shell
  kubeadm join <master-ip>:<master-port> --token <token> --discovery-token-ca-cert-hash sha256:<hash>
+```
+
+##  安装pod网络附加组件
+
+> 选择一种网络安装，常用的有calico和flannel。
+
+- calico安装
+
+```shell
+Kubernetes/install/install-networks/install-calico.sh
+```
+
+- flannel安装
+
+```shell
+Kubernetes/install/install-networks/install-flannel.sh
 ```
 
 ## 其他配置
