@@ -8,11 +8,9 @@
 
 编写需要组件的Dockerfile文件，利用Docker Hub的自动构建功能，中转获取所需镜像，形成私有镜像仓库。
 
-[安装脚本文档](https://github.com/Lengxiaobing/mirrors-repository/tree/master/Kubernetes/install)
-
 ### 镜像版本更新日志
 
-- 2019-09-09：**v1.15.3**
+- 2019-09-09：**v1.15.3**    [部署文档](https://github.com/Lengxiaobing/mirrors-repository/tree/master/Kubernetes/install)
 
 ## 组件构成
 
