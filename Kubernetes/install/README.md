@@ -114,7 +114,7 @@ kubeadm join <master-ip>:<master-port> --token <token> --discovery-token-ca-cert
 
 ##  安装pod网络附加组件
 
-> 选择一种网络组件进行安装，常用的有calico和flannel。
+> 选择一种网络组件进行安装，常用的有calico和flannel。`主从节点都需要安装网络组件`
 
 ### calico安装
 
