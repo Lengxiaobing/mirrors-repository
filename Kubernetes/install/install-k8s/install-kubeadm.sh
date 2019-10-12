@@ -32,7 +32,7 @@ gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors
 EOF
 
 # 安装kubelet、 kubeadm、kubectl
-yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+yum install -y kubelet-1.15.3 kubeadm-1.15.3 kubectl-1.15.3 --disableexcludes=kubernetes
 
 # 设置kubelet开机启动，并立即启动
 systemctl enable kubelet && systemctl start kubelet
