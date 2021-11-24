@@ -4,11 +4,91 @@
 build.sh 为执行 Dockerfile 的脚本
 
 ## 安装
-- 安装MongoDB
+### 安装MongoDB
 
-可以使用镜像安装，也可以直接安装。这里不在说明安装过程。
+1. 拉取镜像
 
-- 设置配置文件
+```shell
+docker pull mongo
+# 运行容器
+docker run --name mongodb -p 27017:27017 -v $PWD/db:/data/db -d mongo:latest
+```
+
+2. 以 admin 用户身份进入mongo
+
+```shell
+docker exec -it  mongodb  mongo admin
+```
+
+3. 创建一个 admin 管理员账号 ：
+
+```shell
+db.createUser({ user: 'admin', pwd: '123456', roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
+```
+
+4. 对 admin 用户 进行身份认证
+
+```shell
+db.auth("admin","123456");
+``````
+
+5. 创建 用户、密码和数据库
+
+```shell
+db.createUser({ user: 'yapi', pwd: '123456', roles: [ { role: "dbAdmin", db: "yapi" } ] });
+```
+
+用户：yapi  
+密码：123456  
+数据库：yapi  
+
+6. 对 yapi 进行身份认证
+
+```shell
+db.auth("yapi","123456");
+```
+
+7. 切换数据库
+
+```shell
+use yapi
+```
+
+8. 添加数据
+向表test中添加数据
+
+```shell
+db.test.save({name:"zhangsan"});
+```
+
+9. 查询数据
+
+```shell
+db.test.find();
+```
+
+10. mongo 角色说明
+
+- 数据库用户角色：read、readWrite；
+- 数据库管理角色：dbAdmin、dbOwner、userAdmin;
+- 集群管理角色：clusterAdmin、clusterManager、4. clusterMonitor、hostManage；
+- 备份恢复角色：backup、restore；
+- 所有数据库角色：readAnyDatabase、readWriteAnyDatabase、userAdminAnyDatabase、dbAdminAnyDatabase
+- 超级用户角色：root
+- 内部角色：__system
+
+- Read：允许用户读取指定数据库
+- readWrite：允许用户读写指定数据库
+- dbAdmin：允许用户在指定数据库中执行管理函数，如索引创建、删除，查看统计或访问system.profile
+- userAdmin：允许用户向system.users集合写入，可以在指定数据库里创建、删除和管理用户
+- clusterAdmin：只在admin数据库中可用，赋予用户所有分片和复制集相关函数的管理权限。
+- readAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的读权限
+- readWriteAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的读写权限
+- userAdminAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的userAdmin权限
+- dbAdminAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的dbAdmin权限。
+- root：只在admin数据库中可用。超级账号，超级权限
+
+### yapi配置
 
 ```json
 {
@@ -16,11 +96,11 @@ build.sh 为执行 Dockerfile 的脚本
   "adminAccount": "admin@admin.com",
   "timeout":120000,
   "db": {
-    "servername": "127.0.0.1",     //MongoDB地址
-    "DATABASE": "yapi",        //MongoDB库名
-    "port": 27017,             //MongoDB端口
-    "user": "username",        //MongoDB用户名
-    "pass": "password",        //MongoDB密码
+    "servername": "127.0.0.1",  //MongoDB地址
+    "DATABASE": "yapi",         //MongoDB库名
+    "port": 27017,              //MongoDB端口
+    "user": "yapi",             //MongoDB用户名
+    "pass": "123456",           //MongoDB密码
     "authSource": "admin"
   },
   "mail": {
