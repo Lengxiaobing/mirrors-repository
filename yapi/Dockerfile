@@ -1,5 +1,6 @@
 FROM node:12-alpine as builder
 WORKDIR /yapi
+RUN apk add --no-cache wget python make
 ENV YAPI_VERSION=1.10.1
 RUN wget https://github.com/YMFE/yapi/archive/v${YAPI_VERSION}.zip
 RUN unzip v${YAPI_VERSION}.zip && mv yapi-${YAPI_VERSION} vendors
