@@ -37,10 +37,9 @@ db.auth("admin","123456");
 ```shell
 db.createUser({ user: 'yapi', pwd: '123456', roles: [ { role: "dbAdmin", db: "yapi" } ] });
 ```
-
-用户：yapi  
-密码：123456  
-数据库：yapi  
+  用户：yapi  
+  密码：123456  
+  数据库：yapi  
 
 6. 对 yapi 进行身份认证
 
@@ -69,14 +68,16 @@ db.test.find();
 
 10. mongo 角色说明
 
+角色分类：  
 - 数据库用户角色：read、readWrite；
 - 数据库管理角色：dbAdmin、dbOwner、userAdmin;
 - 集群管理角色：clusterAdmin、clusterManager、4. clusterMonitor、hostManage；
 - 备份恢复角色：backup、restore；
 - 所有数据库角色：readAnyDatabase、readWriteAnyDatabase、userAdminAnyDatabase、dbAdminAnyDatabase
 - 超级用户角色：root
-- 内部角色：__system
+- 内部角色：system
 
+角色说明：
 - Read：允许用户读取指定数据库
 - readWrite：允许用户读写指定数据库
 - dbAdmin：允许用户在指定数据库中执行管理函数，如索引创建、删除，查看统计或访问system.profile
