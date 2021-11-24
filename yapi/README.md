@@ -16,7 +16,7 @@ build.sh 为执行 Dockerfile 的脚本
   "adminAccount": "admin@admin.com",
   "timeout":120000,
   "db": {
-    "servername": "mongo",
+    "servername": "127.0.0.1",     //MongoDB地址
     "DATABASE": "yapi",        //MongoDB库名
     "port": 27017,             //MongoDB端口
     "user": "username",        //MongoDB用户名
