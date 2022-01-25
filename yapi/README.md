@@ -37,9 +37,6 @@ db.auth("admin","123456");
 ```shell
 db.createUser({ user: 'yapi', pwd: '123456', roles: [ { role: "dbAdmin", db: "yapi" } ] });
 ```
-  用户：yapi  
-  密码：123456  
-  数据库：yapi  
 
 6. 对 yapi 进行身份认证
 
@@ -89,7 +86,7 @@ db.test.find();
 - dbAdminAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的dbAdmin权限。
 - root：只在admin数据库中可用。超级账号，超级权限
 
-### yapi配置
+### 安装yapi
 
 ```json
 {
